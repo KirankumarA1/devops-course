@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        stage('Run Application') {
+        stage('Run App') {
             steps {
                 bat 'node server.js'
             }
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Success') {
             steps {
-                echo 'CI/CD pipeline without Docker working 🚀'
+                echo 'CI/CD pipeline working 🚀'
             }
         }
     }
