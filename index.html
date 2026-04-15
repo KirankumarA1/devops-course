@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1 class="logo">NETFLIX</h1>
+        <button class="signin-btn">Sign In</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h2>Unlimited movies, TV shows and more</h2>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- ✅ User Form (CONNECTED TO BACKEND) -->
+    <section class="user-form">
+        <h2>User Details</h2>
+
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-row">
+            <img src="https://via.placeholder.com/300" alt="movie">
+            <img src="https://via.placeholder.com/300" alt="movie">
+            <img src="https://via.placeholder.com/300" alt="movie">
+        </div>
+    </section>
+
+</body>
+</html>

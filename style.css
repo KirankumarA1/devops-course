@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signin-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+}
+
+.overlay h2 {
+    font-size: 40px;
+}
+
+.overlay input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.user-form {
+    padding: 60px;
+    background-color: #111;
+    text-align: center;
+}
+
+.user-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+
+.user-form button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.movies {
+    padding: 40px;
+    text-align: center;
+}
+
+.movie-row {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-row img {
+    width: 300px;
+    height: auto;
+}
