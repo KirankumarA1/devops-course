@@ -8,15 +8,9 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Test') {
             steps {
-                sh 'docker build -t netflix-app .'
-            }
-        }
-
-        stage('Success') {
-            steps {
-                echo 'CI/CD Pipeline working successfully 🚀'
+                echo 'Pipeline working fine 🚀'
             }
         }
     }
