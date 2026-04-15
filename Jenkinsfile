@@ -8,9 +8,21 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Install Dependencies') {
             steps {
-                echo 'Pipeline working fine 🚀'
+                bat 'npm install'
+            }
+        }
+
+        stage('Run Application') {
+            steps {
+                bat 'node server.js'
+            }
+        }
+
+        stage('Success') {
+            steps {
+                echo 'CI/CD pipeline without Docker working 🚀'
             }
         }
     }
